@@ -9,14 +9,13 @@ import CarLocation from './components/CarLocation';
 import useCarsData from './hooks/useCarsData';
 import useCarsFilter from './hooks/useCarsFilter';
 
-import { Car } from './types';
 import { CAR_LOCATION, HOME } from './utils/paths';
 
 
 const App: React.FC = () => {
   const [selectedSort, setSelectedSort] = useState('');
   const [isSorted, setIsSorted] = useState(false);
-  const { cars, removeCar, updateCar } = useCarsData();
+  const { cars, removeCar, saveCar } = useCarsData();
   const sortedCars = useCarsFilter(cars, selectedSort);
 
   const handleSortChange = (sort: string) => {
@@ -27,16 +26,6 @@ const App: React.FC = () => {
   const cancelSort = () => {
     setSelectedSort('');
     setIsSorted(false);
-  };
-
-  const saveCar = (car: Car) => {
-    const updatedCars = cars.map((c: Car) => {
-      if (c.id === car.id) {
-        return car;
-      }
-      return c;
-    });
-    updateCar(updatedCars);
   };
 
   return (
@@ -50,7 +39,14 @@ const App: React.FC = () => {
       )}
       <Router>
         <Routes>
-          <Route path={HOME} element={<CarsList cars={selectedSort ? sortedCars : cars} removeCar={removeCar} saveCar={saveCar} />} />
+          <Route path={HOME}
+            element={
+              <CarsList
+                cars={selectedSort ? sortedCars : cars}
+                removeCar={removeCar}
+                saveCar={saveCar}
+              />}
+          />
           <Route path={CAR_LOCATION + ':id'} element={<CarLocation cars={cars} />} />
           <Route path="/*" element={<Navigate replace to="/car" />}></Route>
         </Routes>

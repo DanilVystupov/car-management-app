@@ -26,7 +26,17 @@ const useCarsData = () => {
         setCars(updatedCars);
     };
 
-    return { cars, removeCar, updateCar };
+    const saveCar = (car: Car) => {
+        const updatedCars = cars.map((c: Car) => {
+            if (c.id === car.id) {
+                return car;
+            }
+            return c;
+        });
+        updateCar(updatedCars);
+    };
+
+    return { cars, removeCar, updateCar, saveCar };
 };
 
 export default useCarsData;

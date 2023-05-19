@@ -37,6 +37,13 @@
     font-family: Arial, sans-serif;
 }
 
+@media (max-width: 767px) {
+    .card {
+        width: 55%;
+        margin: 10px 0;
+    }
+}
+
 .card strong {
     font-weight: bold;
 }
