@@ -4,9 +4,16 @@
 
 ## Иллюстрация к проекту
 
+Главная страница карточек с автомобилями
 ![Главная страница карточек с автомобилями](https://github.com/DanilVystupov/car-management-app/blob/main/home.png)
+
+Сортировка автомобилей
 ![Сортировка автомобилей](https://github.com/DanilVystupov/car-management-app/blob/main/sorted.png)
+
+Редактирование данных автомобиля
 ![Редактирование данных автомобиля](https://github.com/DanilVystupov/car-management-app/blob/main/edit.png)
+
+Местоположение автомобиля
 ![Местоположение автомобиля](https://github.com/DanilVystupov/car-management-app/blob/main/location.png)
 
 ## Развертывание
