@@ -4,11 +4,10 @@
 
 ## Иллюстрация к проекту
 
-![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
-![Главная страница карточек с автомобилями](https://github.com/car-management-app/raw/main/home.jpg)
-![Сортировка автомобилей](https://github.com/car-management-app/blob/main/sorted.jpg)
-![Редактирование данных автомобиля](https://github.com/car-management-app/blob/main/edit.jpg)
-![Местоположение автомобиля](https://github.com/car-management-app/blob/main/location.jpg)
+![Главная страница карточек с автомобилями](https://github.com/DanilVystupov/car-management-app/blob/main/home.png)
+![Сортировка автомобилей](https://github.com/DanilVystupov/car-management-app/blob/main/sorted.png)
+![Редактирование данных автомобиля](https://github.com/DanilVystupov/car-management-app/blob/main/edit.png)
+![Местоположение автомобиля](https://github.com/DanilVystupov/car-management-app/blob/main/location.png)
 
 ## Развертывание
 
